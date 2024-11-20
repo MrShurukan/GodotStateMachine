@@ -25,7 +25,7 @@ func _physics_process(delta: float) -> void:
 	elif -135 < angle and angle <= -45:
 		animation_player.play("walk_forward")
 		lastDirection = "forward"
-	elif (0 < angle and angle <= 180) or (0 > angle and angle >= -180):
+	elif (135 < angle and angle <= 180) or (-135 > angle and angle >= -180):
 		animation_player.play("walk_left")
 		lastDirection = "left"
 	elif 45 < angle and angle <= 135:
